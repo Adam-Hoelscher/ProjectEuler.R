@@ -1,0 +1,14 @@
+.First.sys()
+
+print(sapply(
+  X = c('data.table','hashmap','gmp'),
+  FUN = function(x){
+    if (x %in% installed.packages()){
+      T
+    } else if (install.packages(x)){
+      T
+    } else {
+      F
+    }
+  }
+))
